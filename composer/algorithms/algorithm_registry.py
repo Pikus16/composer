@@ -10,6 +10,7 @@ from composer.algorithms.hparams import (AlibiHparams, AugMixHparams, BlurPoolHp
                                          SAMHparams, ScaleScheduleHparams, SelectiveBackpropHparams,
                                          SeqLengthWarmupHparams, SqueezeExciteHparams, StochasticDepthHparams,
                                          SWAHparams)
+from composer.algorithms.saf.saf import SAF
 from composer.core.algorithm import Algorithm
 
 registry: Dict[str, Type[AlgorithmHparams]] = {
@@ -35,6 +36,7 @@ registry: Dict[str, Type[AlgorithmHparams]] = {
     'sam': SAMHparams,
     'alibi': AlibiHparams,
     'selective_backprop': SelectiveBackpropHparams,
+    'saf': SAF,
 }
 
 
